@@ -1,0 +1,55 @@
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+footer {
+    background-color: #373738;
+    padding: auto;
+}
+
+.listomon {
+    width: 50%;
+    margin-left: auto;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.flexGroup {
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.workGrid {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    grid-area: "modestNeedsImage modestNeedsText dhsImage dhsText";
+}
