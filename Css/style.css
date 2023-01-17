@@ -8,6 +8,10 @@ footer {
     padding: auto;
 }
 
+img {
+    max-height: 500px;
+}
+
 .listomon {
     width: 50%;
     margin-left: auto;
@@ -49,7 +53,49 @@ footer {
 
 .workGrid {
     display: grid;
-    grid-column: 2;
-    grid-row: 2;
-    grid-area: "modestNeedsImage modestNeedsText dhsImage dhsText";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: "modestNeedsImage modestNeedsText" "dhsImage dhsText";
+    align-content: center;
+    text-align: center;
+}
+
+.modestNeedsImage {
+    /* background-image: url("/Images/placeholder\ image.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+    grid-area: modestNeedsImage;
+}
+
+.modestNeedsText {
+    grid-area: modestNeedsText;
+}
+
+.dhsImage {
+    /* background-image: url("/Images/placeholder\ image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;   */
+    grid-area: dhsImage;
+}
+
+.dhsText {
+    grid-area: dhsText;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        max-height: 350px;
+    }
+    .flexContainer {
+        flex-direction: column;
+    }
+    .flexGroup {
+        width: 100%;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 500px;
+        grid-template-areas: "modestNeedsImage" "modestNeedsText" "dhsImage" "dhsText";
+    }
 }
